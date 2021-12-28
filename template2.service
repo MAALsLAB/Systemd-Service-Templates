@@ -1,0 +1,11 @@
+[Unit]
+Description=descripe the service
+
+[Service]
+User=the user who is going to run the service
+WorkingDirectory=the directory contianing the source code of the service
+ExecStart=execution command that will run the service
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

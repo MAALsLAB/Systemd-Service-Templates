@@ -1,0 +1,10 @@
+[Unit]
+Description=descript what the service is going to do
+
+[Service]
+User=define the user who is going to run the service
+WorkingDirectory=the directory where the service is located
+ExecStart=/bin/bash -c 'cd /home/user/project/ && ./a'
+
+[Install]
+WantedBy=multi-user.target
